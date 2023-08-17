@@ -1,0 +1,187 @@
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+    --first-color: blue;
+    --second-color: rgb(31, 29, 155);
+    --third-color: rgb(61, 13, 128);
+    --fourth-color: #fff;
+}
+p {
+    font-size: 14px;
+}
+body {
+    background-color: var(--fourth-color);
+    overflow-x: hidden;
+}
+.main-heading {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    padding: 90px 0;
+}
+/* ABOUT ME */
+#about-me h3{
+    padding-right: 5px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    color: var(--second-color);
+}
+/* MY SKILL */
+#myskills .second div {
+    border: 1px solid var(--first-color);
+    box-shadow: 2px 0 var(--first-color), 0 2px var(--first-color);
+    border-radius: 3px;
+    width:50px;
+    height: 60px;
+}
+#myskills .second img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Specialities */
+#specialities {
+    padding: 0 60px;
+}
+#specialities h6 {
+    font-size: 17px;
+    font-weight: 900;
+}
+
+/* BLOG */
+#blog {
+    padding: 0 58px;
+    padding-top: 100px;
+}
+#blog img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+#blog .arrow-icon {
+    color:  var(--second-color);
+    position: absolute;
+    font-size: 25px;
+    top: 5px;
+    right: 10px;
+}
+#blog .card-body {
+    position: relative;
+}
+.load {
+    height: 50px;
+    padding-bottom: 130px;
+}
+.load div{
+    justify-content: center;
+    margin: auto;
+    width: 150px;
+    height: 50px;
+    border: 1.5px solid rgb(79, 97, 232);
+    border-radius: 3px;
+}
+.load p{
+    display: flex;
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    top: 13px;
+    left: 25px;
+}
+.load p i{
+    font-size: 18px;
+    position: absolute;
+    top: 3px;
+    left: 80px;
+}
+
+/* Get In Touch */
+#get-in-touch .row {
+    padding-left: 50px;
+    padding-right: 33px;
+}
+#get-in-touch .row .second-col{
+    padding-left: 57px;
+}
+#get-in-touch .btn {
+    padding: 8px 25px;
+    background-color: var(--second-color);
+    color: var(--fourth-color);
+}
+#get-in-touch .first {
+    display: flex;
+}
+#get-in-touch .second{
+    display: flex;
+}
+#get-in-touch ul li {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+#get-in-touch ul li i{
+    border: 1.5px solid rgb(88, 59, 218);
+    color: rgb(71, 44, 192);
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    margin-right: 5px;
+}
+#get-in-touch input {
+    padding: 11px 15px;
+    border-radius: 5px;
+}
+ 
+/* Footer */
+
+#footer a {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    border-radius: 50%;
+    background-color: var(--second-color);
+    margin: 0 7px;
+}
+#footer a i{
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    font-size: 10px;
+    color: #fff;
+}
+
+@media (max-width:600px){
+    #specialities .para-1 {
+        display: none;
+    }
+}
+@media (min-width:600px){
+    #specialities .para-2 {
+        display: none;
+    }
+}
+
+/* MY SPECIALTIES-button- After */
+#specialities button:not(.collapsed)::after {
+    /* position: absolute;
+    top: 43px;
+    right: 18px; */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z'/%3E%3C/svg%3E");
+}
+#specialities button:not(.collapsed){
+    background-color: #fff;
+}
+.accordion-button:focus {
+    border-color: #fff;
+    box-shadow: none;
+}
+#specialities button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus-lg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/%3E%3C/svg%3E");
+}
