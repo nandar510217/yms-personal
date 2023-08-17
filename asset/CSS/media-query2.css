@@ -1,0 +1,24 @@
+@media (max-width: 984px) {
+   .card1 {
+    left: 90px;
+   }
+   .card2 {
+    right: 8rem;
+   }
+}
+@media (max-width: 765px) {
+    .card1 {
+     left: 10px;
+    }
+    .card2 {
+     right: 2rem;
+    }
+ }
+ @media (max-width: 540px) {
+    .card1 {
+     left: 0px;
+    }
+    .card2 {
+     right: 0rem;
+    }
+ }

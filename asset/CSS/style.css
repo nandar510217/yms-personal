@@ -1,0 +1,390 @@
+/* @font-face {
+    font-family: saira;
+    src: url(asset/font/Saira/static/Saira-Regular.ttf);
+} */
+* {
+    /* font-family: saira; */
+    font-family: 'Roboto Condensed', sans-serif;
+}
+:root {
+    --first-color: rgb(26, 26, 188);
+    --second-color: blue;
+    --third-color: white;
+}
+.container {
+    border: 2px solid red;
+}
+
+/* Common */
+.textColor {
+    color: var(--first-color);
+}
+
+/* Common End */
+
+nav {
+    font-size: 16px;  
+}
+nav .container {
+    padding-left: 28px;
+}
+nav .navfont {
+    font-size: 14px;
+}
+nav .contactborder {
+    border: 2px solid;
+    border-image: linear-gradient(70deg, rgb(35, 35, 138), rgb(64, 145, 215))1;
+}
+.Ylogo {
+    /* width: 40px;
+    height: 40px; */
+    font-size: 20px;
+    padding: 7px 12px;
+    background: linear-gradient(to top right, rgb(28, 28, 89),blue);
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+/* header */
+.circleImgGroup {
+    display: flex;
+    justify-content: center;
+}
+.circles {
+    position: relative;
+    top: -45px;
+    display: flex;
+    justify-content: center;
+}
+.blueCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 16%;
+    z-index: -1;
+}
+.circleImgGroup {
+    z-index: 1;
+}
+.circle1 {
+    width: 340px;
+    height: 340px;
+    background-color: rgb(235, 235, 244);
+    border-radius: 50%;
+}
+.circle2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(176, 176, 222);
+    border-radius: 50%;
+}
+.circle3 {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    background-color: rgb(34 34 191);
+    border-radius: 50%;
+}
+ .icons-group {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  padding-bottom: 48px;
+}
+ .icon .btn {
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    color: var(--first-color);
+    border-radius: 50%;
+    border: 1px solid #E5E7E9 ;
+}
+
+.card1 {
+    width: 170px;
+    padding: 10px 4px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 18rem;
+    left: -70px;
+    z-index: 1;
+    background-color: #fff;
+}
+.card1 i, .card2 i {
+    padding: 10px;
+    background-color: #D6EAF8;
+    border-radius: 50%;
+}
+.card1 p, .card2 p {
+    font-size: 13px;
+    margin: 0;
+}
+.card2 {
+    width: 80px;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    background-color: #fff;
+}
+/* #header .container {
+    margin: 100px auto;
+    position: relative;
+}
+
+#header .middle-cloumn {
+    width: 400px;
+    display: flex;
+    justify-content: center; 
+    position: relative;
+}
+#header .row .ex {
+    font-size: 70px;
+}
+
+
+#header .fullstack {    
+    position: absolute;
+    top: -42px;
+    z-index: -1;  
+}
+#header .img {
+    margin: auto;
+    display: flex;  
+    z-index: 1;
+} 
+#header .circle1 {
+    width: 280px;
+    height: 280px;
+    background-color: rgb(34 34 191);
+    position: absolute;
+    top: 101px;
+    left: 72px;
+    border-radius: 50%;
+    z-index: -1;
+}
+#header .circle2 {
+    width: 310px;
+    height: 310px;
+    background-color: rgb(176, 176, 222);
+    position: absolute;
+    top: 85px;
+    left: 56px;
+    z-index: -2;
+    border-radius: 50%;
+}
+#header .circle3 {
+    width: 340px;
+    height: 340px;
+    background-color: rgb(235, 235, 244);
+    position: absolute;
+    top: 70px;
+    left: 41px;
+    border-radius: 50%;
+    z-index: -3;
+} */
+
+/* .blueCircle {
+    width: 350px;
+    height: 350px;
+    background-color: rgb(235, 235, 244);
+    z-index: 2;
+    border-radius: 50%;
+    z-index: -3;
+    position: relative;
+} */
+/* .blueCircle::before {
+    content: '';
+    width: 320px;
+    height: 320px;
+    background-color: rgb(176, 176, 222);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -2;
+    border-radius: 50%;
+} */
+
+
+#header .card1 {
+    /* border: 2px solid red; */
+    background-color: rgb(248, 248, 248);
+    width: 100%;
+    max-width: 149px;
+    height: 55px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    position: absolute;
+    top: 319px;
+    left: -18px;
+}
+#header .card1 i {
+    margin-right: 10px;
+    
+}
+#header .card1 p {
+    margin-bottom: 0;
+    font-size: 10px;
+}
+#header .card2 {
+    background-color: rgb(248, 248, 248);
+    width: 80px;
+    height: 95px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    position: absolute;
+    top: 57px;
+    left: 316px;
+}
+#header .card1 i, #header .card2 i{
+    border-radius: 50%;
+    background-color: #D6EAF8;
+    color: rgb(34 34 191);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header .headercardfont {
+    font-size: 16px;
+}
+#header .card1 i {
+    width: 40px;
+    height: 40px;
+}
+#header .card2 i {
+    width: 30px;
+    height: 30px;
+}
+#header .card2 p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* About Me */
+#aboutMe .container {
+    margin-bottom: 100px;
+    /* border: 2px solid green; */
+}
+#aboutMe .aboutimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutMe .aboutimg figure {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 280px;
+    height: 280px;
+    border-radius: 50%;
+}
+
+#aboutMe .aboutimg figure::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 130px;
+    /* background-color: rgb(34 34 191); */
+    background: linear-gradient(to top right, rgb(25, 25, 120),rgb(64, 145, 215));
+    transform: rotate(-10deg);
+    left: 0;
+    bottom: 0;
+    z-index: -1;   
+}
+
+#aboutMe .aboutimg .sport-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateX(10px);
+}
+#aboutMe figure .sport {
+    z-index: -4 !important;
+    position: absolute;
+    top: 114px;
+    left: 29px;
+    width: 72px;
+}
+/* #aboutMe .aboutimg .mixbluebg {
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(to right,rgb(28, 28, 89),blue );
+    position: absolute;
+    transform: rotate(-16deg);
+    top: 279px;
+    left: 121px;
+    z-index: -1;
+    overflow: hidden;
+} */
+#aboutMe .aboutletter {
+    padding-left: 42px;
+}
+#aboutMe .aboutText {
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+#aboutMe .aboutTel i {
+    padding: 11px 12px;
+    background-color: rgb(233, 232, 232);
+    border-radius: 50%;
+}
+#aboutMe .aboutIcon ul li i {
+    background-color: rgb(233, 232, 232);
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+    margin-right: 10px;
+    font-weight: 20px;
+}
+#aboutMe .paddingleft ul {
+    padding-left: 20px;
+}
+#aboutMe .aboutfont {
+    font-size: 14px;
+}
+#aboutMe .textColor {
+    font-weight: bolder;
+}
+
+/* Experience */
+#experience .experiencebox {
+    line-height: 35px;
+}
+#experience .row1, .row2, .row3 {
+    border-bottom: 1px solid rgb(34 34 191);
+}
+#experience .row1-1, .row2-1, .row3-1 {
+    justify-content: space-between;
+}
+#experience .exFont {
+    font-size: 18px;
+    font-weight: 600;
+    color: #566573 ;
+}
+#experience .kmdFont {
+    font-size: 18px;
+}
+#experience .experiencebox h5 {
+    font-size: 18px;
+    font-weight: 700;
+}

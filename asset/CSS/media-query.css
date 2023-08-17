@@ -1,0 +1,60 @@
+ /* @media (max-width: 960px) {
+    
+    body {
+        background-color: rgb(235, 206, 206);
+    } */
+
+    /* header */
+    /* .order1 {
+        order: 1;
+    }
+    .order2 {
+        order: 2;
+    }
+    .order3 {
+        order: 3;
+    }
+    #header .card1 {
+        top: unset;
+        left: 28px;
+        bottom: -70px;
+    }
+    #header .card2 {
+        top: unset;
+        left: unset;
+        bottom: -70px;
+        right: 26px;
+        width: 149px;
+        height: 55px;
+        flex-direction: row;
+    }
+    #header .icon {
+        position: absolute;
+        right: 0px;
+        bottom: -69px;
+    } */
+
+    /* About */
+    /* .mqyear { */
+        /* margin-left: 30px; */
+        /* background-color: black;
+    } */
+    /* #aboutMe .container {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    #header .icon {
+        left: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .blueCircle {
+        position: absolute;
+        top: -7px;
+        left: -36px;
+    }
+}  */
