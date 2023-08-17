@@ -12,7 +12,7 @@
     --third-color: white;
 }
 .container {
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 /* Common */
@@ -35,11 +35,15 @@ nav .contactborder {
     border: 2px solid;
     border-image: linear-gradient(70deg, rgb(35, 35, 138), rgb(64, 145, 215))1;
 }
+nav .navbar-toggler-icon {
+    color: white;
+    background-color: royalblue;
+}
 .Ylogo {
     /* width: 40px;
     height: 40px; */
     font-size: 20px;
-    padding: 7px 12px;
+    padding: 6px 12px;
     background: linear-gradient(to top right, rgb(28, 28, 89),blue);
     color: #fff;
     border-radius: 50%;
@@ -140,85 +144,6 @@ nav .contactborder {
     right: 0px;
     background-color: #fff;
 }
-/* #header .container {
-    margin: 100px auto;
-    position: relative;
-}
-
-#header .middle-cloumn {
-    width: 400px;
-    display: flex;
-    justify-content: center; 
-    position: relative;
-}
-#header .row .ex {
-    font-size: 70px;
-}
-
-
-#header .fullstack {    
-    position: absolute;
-    top: -42px;
-    z-index: -1;  
-}
-#header .img {
-    margin: auto;
-    display: flex;  
-    z-index: 1;
-} 
-#header .circle1 {
-    width: 280px;
-    height: 280px;
-    background-color: rgb(34 34 191);
-    position: absolute;
-    top: 101px;
-    left: 72px;
-    border-radius: 50%;
-    z-index: -1;
-}
-#header .circle2 {
-    width: 310px;
-    height: 310px;
-    background-color: rgb(176, 176, 222);
-    position: absolute;
-    top: 85px;
-    left: 56px;
-    z-index: -2;
-    border-radius: 50%;
-}
-#header .circle3 {
-    width: 340px;
-    height: 340px;
-    background-color: rgb(235, 235, 244);
-    position: absolute;
-    top: 70px;
-    left: 41px;
-    border-radius: 50%;
-    z-index: -3;
-} */
-
-/* .blueCircle {
-    width: 350px;
-    height: 350px;
-    background-color: rgb(235, 235, 244);
-    z-index: 2;
-    border-radius: 50%;
-    z-index: -3;
-    position: relative;
-} */
-/* .blueCircle::before {
-    content: '';
-    width: 320px;
-    height: 320px;
-    background-color: rgb(176, 176, 222);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: -2;
-    border-radius: 50%;
-} */
-
 
 #header .card1 {
     /* border: 2px solid red; */
@@ -283,8 +208,12 @@ nav .contactborder {
 
 /* About Me */
 #aboutMe .container {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     /* border: 2px solid green; */
+}
+#aboutMe h2{
+    font-size: 2rem;
+    font-weight: bold;
 }
 #aboutMe .aboutimg {
     display: flex;
@@ -327,17 +256,7 @@ nav .contactborder {
     left: 29px;
     width: 72px;
 }
-/* #aboutMe .aboutimg .mixbluebg {
-    width: 300px;
-    height: 200px;
-    background: linear-gradient(to right,rgb(28, 28, 89),blue );
-    position: absolute;
-    transform: rotate(-16deg);
-    top: 279px;
-    left: 121px;
-    z-index: -1;
-    overflow: hidden;
-} */
+
 #aboutMe .aboutletter {
     padding-left: 42px;
 }
@@ -368,10 +287,17 @@ nav .contactborder {
 #aboutMe .textColor {
     font-weight: bolder;
 }
+#aboutMe .iconPs {
+    padding-left: 50px;
+}
 
 /* Experience */
 #experience .experiencebox {
     line-height: 35px;
+}
+#experience h2{
+    font-size: 2rem;
+    font-weight: bold;
 }
 #experience .row1, .row2, .row3 {
     border-bottom: 1px solid rgb(34 34 191);
