@@ -1,4 +1,8 @@
 @media (max-width: 984px) {
+  nav .contactborder {
+    border: 0;
+    margin-left: 5px;
+  }
    .card1 {
     left: 90px;
    }
@@ -20,7 +24,11 @@
       margin: 10px 0;
     }
     #aboutMe .yearEx .year {
-      width: 93%;
+      /* width: 93%; */
+      margin-right: 20px;
+    }
+    #aboutMe .center {
+      padding: 0 70px;
     }
     #aboutMe .aboutletter {
       padding-left: 0px;
@@ -52,5 +60,12 @@
     }
     .card2 {
      right: 0rem;
+    }
+    #aboutMe .yearEx {
+      display: block;
+    }
+    #aboutMe .yearEx .year {
+      /* width: 93%; */
+      margin-right: 20px;
     }
  }

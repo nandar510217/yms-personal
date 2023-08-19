@@ -28,17 +28,68 @@ nav .container {
 nav .navfont {
     font-size: 14px;
 }
+nav .contact-me {
+    position: relative;
+    overflow: hidden;
+}
 nav .contactborder {
     border: 2px solid;
     border-image: linear-gradient(70deg, rgb(35, 35, 138), rgb(64, 145, 215))1;
+    overflow: hidden;
 }
-nav .navbar-toggler-icon {
-    color: white;
-    background-color: royalblue;
+nav .contactborder:hover {
+    animation: contact 3s ease infinite;   
 }
+@keyframes contact {
+    0% {
+        border-top: 0;
+        border-left-width: 3px;
+        border-right-width: 3px;
+        border-bottom-width: 3px;
+    }
+    25% {
+        border-right: 0;
+        border-top-width: 3px;
+        border-left-width: 3px;
+        border-bottom-width: 3px;
+    }
+    50% {
+        border-bottom: 0;
+        border-top-width: 3px;
+        border-left-width: 3px;
+        border-right-width: 3px;
+    }
+    75% {
+        border-left: 0;
+        border-top-width: 3px;
+        border-right-width: 3px;
+        border-bottom-width: 3px;
+    }
+    100% {
+        border-top: 100%;
+        border-left-width: 3px;
+    }
+}
+/* nav .contactborder::before {
+    content: '';
+    width: 97px;
+    height: 40px;
+    border-bottom-right-radius: 50%;
+    position: absolute;
+    background: linear-gradient(to top right, rgb(28, 28, 89),blue);
+    top: 2px;
+    left: 3px;
+    transition: 1s;
+    background-color: aqua;
+    transform: translate(0,-100%);
+    opacity: 0;
+} */
+/* nav .contactborder:hover::before {
+    z-index: -3;
+    opacity: 1;
+    transform: translate(0,0);
+} */
 .Ylogo {
-    /* width: 40px;
-    height: 40px; */
     font-size: 20px;
     padding: 6px 12px;
     background: linear-gradient(to top right, rgb(28, 28, 89),blue);
@@ -46,8 +97,44 @@ nav .navbar-toggler-icon {
     border-radius: 50%;
     margin-right: 4px;
 }
+nav .middle-menu li{
+    position: relative;
+    transition: 5s;
+}
+nav .middle-menu li::before {
+    content:'';
+    width: 0%;
+    height: 3px;
+    background-color: rgb(26, 26, 188);
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+    transition: .3s;
+}
+nav .middle-menu li:hover::before {
+    width: 50%;
+}
+nav .middle-menu li::after {
+    content:'';
+    width: 0%;
+    height: 3px;
+    background-color: rgb(26, 26, 188);
+    position: absolute;
+    right: 40%;
+    bottom: 0;
+    transition: .3s;
+}
+nav .middle-menu li:hover::after {
+    width: 50%;
+}
 
 /* header */
+#header2 .ex i {
+    font-size: 40px;
+}
+#header2 .header-col p {
+    font-size: 20px;
+}
 .circleImgGroup {
     display: flex;
     justify-content: center;
@@ -100,13 +187,11 @@ nav .navbar-toggler-icon {
 }
 .icon .btn {
     width: 50px;
-    /* height: 50px; */
-    line-height: 35px;
+    height: 50px;
+    /* line-height: 35px; */
     background-color: aliceblue;
     color: var(--first-color);
     border-radius: 50%;
-    /* border: 1px solid #E5E7E9 ; */
-
     overflow: hidden;
     position: relative;
     display: flex;
@@ -117,30 +202,25 @@ nav .navbar-toggler-icon {
     font-size: 1.3rem;
 }
 
-/* ADD */
+.icon .btn::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid #E5E7E9 ;
+    position: absolute;
+    top: 100%;
+    transition: all 0.5s;
+}
 .icon .btn:hover i {
     color: #F7F7F7;
     position: relative;
     z-index: 1;
 }
-.icon .btn::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    line-height: 35px;
-    background-color: #fff;
-    border-radius: 50%;
-    border: 1px solid #E5E7E9 ;
-    position: absolute;
-    top: 100%;
-    /* left: -3px; */
-    transition: all 0.5s;
-}
 .icon .btn:hover::before {
     top: 0;
     left: 0;
 }
-
 .icon .btn.fb:hover::before {
     background-color: #1773EA;
 }
@@ -154,7 +234,6 @@ nav .navbar-toggler-icon {
     background-color: #0077B5;
 }
 
-/* end */
 .card1 {
     width: 170px;
     padding: 10px 4px;
@@ -166,11 +245,14 @@ nav .navbar-toggler-icon {
     left: -70px;
     z-index: 1;
     background-color: #fff;
+    animation: cardShake1 3s ease infinite;
 }
 .card1 i, .card2 i {
     padding: 10px;
     background-color: #D6EAF8;
+    color: rgb(34 34 191);
     border-radius: 50%;
+    display: flex;
 }
 .card1 p, .card2 p {
     font-size: 13px;
@@ -188,73 +270,35 @@ nav .navbar-toggler-icon {
     top: 80px;
     right: 0px;
     background-color: #fff;
+    animation: cardShake2 3s ease infinite;
 }
 
-#header .card1 {
-    /* border: 2px solid red; */
-    background-color: rgb(248, 248, 248);
-    width: 100%;
-    max-width: 149px;
-    height: 55px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    position: absolute;
-    top: 319px;
-    left: -18px;
+@keyframes cardShake1 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
-#header .card1 i {
-    margin-right: 10px;
-    
-}
-#header .card1 p {
-    margin-bottom: 0;
-    font-size: 10px;
-}
-#header .card2 {
-    background-color: rgb(248, 248, 248);
-    width: 80px;
-    height: 95px;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 9px;
-    position: absolute;
-    top: 57px;
-    left: 316px;
-}
-#header .card1 i, #header .card2 i{
-    border-radius: 50%;
-    background-color: #D6EAF8;
-    color: rgb(34 34 191);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#header .headercardfont {
-    font-size: 16px;
-}
-#header .card1 i {
-    width: 40px;
-    height: 40px;
-}
-#header .card2 i {
-    width: 30px;
-    height: 30px;
-}
-#header .card2 p {
-    margin-bottom: 0;
-    text-align: center;
+@keyframes cardShake2 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 /* About Me */
 #aboutMe .container {
     margin-bottom: 50px;
-    /* border: 2px solid green; */
 }
 #aboutMe h2{
     font-size: 2rem;
@@ -286,6 +330,20 @@ nav .navbar-toggler-icon {
     left: 0;
     bottom: 0;
     z-index: -1;   
+}
+#aboutMe .aboutimg figure .sport-image {
+    animation: about-me-scale 5s ease infinite;
+}
+@keyframes about-me-scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 #aboutMe .aboutimg .sport-image {
