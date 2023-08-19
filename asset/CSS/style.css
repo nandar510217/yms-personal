@@ -95,18 +95,66 @@ nav .navbar-toggler-icon {
   align-items: flex-end;
   padding-bottom: 48px;
 }
- .icon .btn {
+.icon {
+    display: inherit;
+}
+.icon .btn {
     width: 50px;
     /* height: 50px; */
     line-height: 35px;
     background-color: aliceblue;
     color: var(--first-color);
     border-radius: 50%;
-    border: 1px solid #E5E7E9 ;
+    /* border: 1px solid #E5E7E9 ; */
+
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .icon i {
     font-size: 1.3rem;
 }
+
+/* ADD */
+.icon .btn:hover i {
+    color: #F7F7F7;
+    position: relative;
+    z-index: 1;
+}
+.icon .btn::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    line-height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #E5E7E9 ;
+    position: absolute;
+    top: 100%;
+    /* left: -3px; */
+    transition: all 0.5s;
+}
+.icon .btn:hover::before {
+    top: 0;
+    left: 0;
+}
+
+.icon .btn.fb:hover::before {
+    background-color: #1773EA;
+}
+.icon .btn.ig:hover::before {
+    background-color: #F6076D;
+}
+.icon .btn.whatsapp:hover::before {
+    background-color: #25D366;
+}
+.icon .btn.linkin:hover::before {
+    background-color: #0077B5;
+}
+
+/* end */
 .card1 {
     width: 170px;
     padding: 10px 4px;
