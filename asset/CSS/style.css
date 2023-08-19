@@ -129,6 +129,9 @@ nav .middle-menu li:hover::after {
 }
 
 /* header */
+#header {
+    height: 100vh;
+}
 #header2 .ex i {
     font-size: 40px;
 }
