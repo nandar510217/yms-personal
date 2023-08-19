@@ -129,7 +129,7 @@ nav .middle-menu li:hover::after {
 }
 
 /* header */
-#header {
+#header2 {
     height: 100vh;
 }
 #header2 .ex i {
@@ -244,7 +244,7 @@ nav .middle-menu li:hover::after {
     display: flex;
     align-items: center;
     position: absolute;
-    top: 18rem;
+    bottom: 5rem;
     left: -70px;
     z-index: 1;
     background-color: #fff;
@@ -305,8 +305,8 @@ nav .middle-menu li:hover::after {
     /* border: 2px solid green; */
 }
 #aboutMe h2{
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 41px;
+    font-weight: bolder;
 }
 #aboutMe .aboutimg {
     display: flex;
