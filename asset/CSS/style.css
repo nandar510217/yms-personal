@@ -298,12 +298,8 @@ nav .middle-menu li:hover::after {
 
 /* About Me */
 #aboutMe .container {
-<<<<<<< HEAD
-    margin-bottom: 50px;
-=======
     margin-bottom: 70px;
     /* border: 2px solid green; */
->>>>>>> 7562930d5de1869bc8400341bd10237323b225fd
 }
 #aboutMe h2{
     font-size: 2rem;
