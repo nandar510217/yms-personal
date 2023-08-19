@@ -298,7 +298,12 @@ nav .middle-menu li:hover::after {
 
 /* About Me */
 #aboutMe .container {
+<<<<<<< HEAD
     margin-bottom: 50px;
+=======
+    margin-bottom: 70px;
+    /* border: 2px solid green; */
+>>>>>>> 7562930d5de1869bc8400341bd10237323b225fd
 }
 #aboutMe h2{
     font-size: 2rem;
@@ -324,7 +329,6 @@ nav .middle-menu li:hover::after {
     position: absolute;
     width: 300px;
     height: 130px;
-    /* background-color: rgb(34 34 191); */
     background: linear-gradient(to top right, rgb(25, 25, 120),rgb(64, 145, 215));
     transform: rotate(-10deg);
     left: 0;
