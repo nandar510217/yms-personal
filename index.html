@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="asset/CSS/style.css">
     <link rel="stylesheet" href="asset/CSS/media-query2.css">
     <link rel="stylesheet" href="asset/CSS/wathan.css">
@@ -236,7 +236,7 @@
                             <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div class=" accordion-body">
                                     <div class=" pe-5">
-                                        <img class="img-fluid" style="height: 200px;" src="image/webdesign.jpeg" alt="">
+                                        <img class="img-fluid" style="height: 200px;" src="asset/images/webdesign.jpeg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -328,34 +328,34 @@
                     <img class="img-fluid" src="asset/images/blog-01.webp" alt="">
                     <div class="card-body text-black pt-3">
                         <p>How to plan and manage <br>project like pro?</p>
-                        <span class="arrow-icon"><i class="bi bi-arrow-up-right-circle-fill"></i></span>
+                        <a href="#" class="arrow-icon"><i class="bi bi-arrow-up-right-circle-fill"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="main-card col-lg-4 col-md-6">
                 <div>
                     <img class="img-fluid" src="asset/images/blog-02.jpg" alt="">
                     <div class="card-body text-black pt-3">
                         <p>How to plan and manage <br>project like pro?</p>
-                        <span class="arrow-icon"><i class="bi bi-arrow-up-right-circle-fill"></i></span>
+                        <a href="#" class="arrow-icon"><i class="bi bi-arrow-up-right-circle-fill"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="main-card col-lg-4 col-md-6">
                 <div>
                     <img class="img-fluid" src="asset/images/blog-03.jpg" alt="">
                     <div class="card-body text-black pt-3">
                         <p>How to plan and manage <br>project like pro?</p>
-                        <span class="arrow-icon"><i class="bi bi-arrow-up-right-circle-fill"></i></span>
+                        <a href="#" class="arrow-icon"><i class="bi bi-arrow-up-right-circle-fill"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="container load pt-5">
-        <div>
-            <p>Load More <i class="fa-solid fa-arrow-right"></i></p>
-        </div>
+        <a href="">
+            Load More <i class="fa-solid fa-arrow-right ps-1 text-black"></i>
+        </a>
     </section>
 
     <!-- GET IN TOUCH -->
@@ -364,6 +364,35 @@
             <div class="main-heading pb-1 fw-bold" data-aos="zoom-in">Get in Touch</div>
             <div class="" style="text-align: center;">For Business and partnership inquiry please contact me below!</div>
         </div>
+
+        <div class="Content py-5 border-bottom">
+            <div style="justify-content: center; display: flex;">
+                <ul style="width: 300px; height: 250px;">
+                    <li class="py-2" style="display: flex; position: relative;"><i class="bi bi-telephone"></i><span style="color: gray; font-size: 14px;">Call me</span> <br> <span style="position: absolute; left: 45px; top: 26px; font-size: 14px;">+95 9251749823</span></li>
+
+                    <li class="py-3" style="display: flex; position: relative;"><i class="bi bi-envelope"></i><span style="color: gray; font-size: 14px;">Email Me</span> <br> <span style="position: absolute; left: 45px; top: 34px; font-size: 14px;">aefehuhjn@gmail.com</span></li>
+
+                    <li class="py-2" style="display: flex; position: relative;"><i class="bi bi-geo-alt"></i><span style="color: gray; font-size: 14px;">Address</span> <br> <span style="position: absolute; left: 45px; top: 25px; font-size: 14px;">No.24 Hlaing, Yangon, Myanmar</span></li>
+                </ul>
+            </div>
+            <form action="">
+                <div class="first mb-3">
+                    <input class="form-control form-control-sm me-3" type="text" placeholder="Full name" aria-label=".form-control-sm example">
+                    <input class="form-control form-control-sm" type="text" placeholder="Your Email" aria-label=".form-control-sm example">
+                    <!-- <input type="text" class="form-control  me-3" placeholder="Full Name">
+                    <input type="text" class="form-control" placeholder="Your Email"> -->
+                </div>
+                <div class="second mb-3">
+                    <input class="form-control form-control-sm me-3" type="text" placeholder="Phone Number" aria-label=".form-control-sm example">
+                    <input class="form-control form-control-sm" type="text" placeholder="Subject" aria-label=".form-control-sm example">
+                </div>
+                <div class="mb-3">
+                    <textarea name="" id="" type="text" class="form-control" rows="5" placeholder="Message"></textarea>
+                </div>
+                <button class="btn float-end">Submit</button>
+            </form>
+        </div>
+
         <div class="row py-5 border-bottom">
             <div class="first-col col-md-5">
                 <ul>
@@ -392,20 +421,22 @@
                     <button class="btn float-end">Submit</button>
                 </form>
             </div>
-            <div class="col-md-1"></div>
+            <!-- <div class="col-md-1"></div> -->
         </div>
     </section>
 
     <!-- FOOTER -->
-    <section id="footer" class="text-ligdarkht py-4">
-        <div class="container d-flex justify-content-around">
-            <div class="pe-3">&copy;2023 All  Rights Reserved</div>
-            <div class="pe-3">Designed By Htet Nandar</div>
-            <div class="d-flex">
-                <a href=""><i class="fa-brands fa-facebook-f" style="right: 8px;"></i></a>
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
+    <section id="footer" class="container text-ligdarkht py-4">
+        <div class="main d-flex justify-content-between">
+            <div class="content">&copy;2023 All  Rights Reserved</div>
+            <div class="content">Designed By Htet Nandar</div>
+            <div >
+                <span class="d-flex icon">
+                    <a href=""><i class="fa-brands fa-facebook-f" style="right: 8px;"></i></a>
+                    <a href=""><i class="bi bi-twitter" style="top: 5px;"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </span>
             </div>
         </div>
     </section>
@@ -416,7 +447,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Saira:wght@300;400&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
     <script src="app.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
