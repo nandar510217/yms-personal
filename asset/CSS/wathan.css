@@ -23,9 +23,6 @@ body {
 }
 
 /* Specialities */
-#specialities {
-    /* padding: 0 60px; */
-}
 #specialities h6 {
     font-size: 17px;
     font-weight: 900;
@@ -203,15 +200,15 @@ body {
 }
 #get-in-touch .btn::before {
     content: "";
-    width: 130px;
-    height: 42px;
+    width: 135px;
+    height: 50px;
     border-top-right-radius: 80px;
     position: absolute;
     background-color: rgba(95, 188, 225, 0.5);
     transition: all 0.5s;
     top: 0;
     left: 0;
-    transform: translateX(-130px);
+    transform: translateX(-140px);
     transform-origin: left;
 }
 #get-in-touch .btn:hover::before {
