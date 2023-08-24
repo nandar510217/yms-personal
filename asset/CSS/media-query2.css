@@ -32,19 +32,18 @@
     }
     #aboutMe .aboutletter {
       padding-left: 0px;
-   }
-   #aboutMe .aboutText {
+    }
+    #aboutMe .aboutText {
       font-size: 13px;
       padding: 0px;
-  }
+    }
    #aboutMe .textColor {
       font-weight: bolder;
       font-size: 2.5rem;
-  }
+    }
   #aboutMe .iconPs {
       padding-left: 13px;
-  }
-
+   }
 }
 @media (max-width: 765px) {
     .card1 {
