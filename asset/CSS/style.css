@@ -32,12 +32,100 @@ nav .contact-me {
     position: relative;
     overflow: hidden;
 }
-nav .contactborder {
-    border: 2px solid;
-    border-image: linear-gradient(70deg, rgb(35, 35, 138), rgb(64, 145, 215))1;
-    overflow: hidden;
+nav .button {
+    font-size: 16px;
+    position: relative;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    color: #ececf3;
+    cursor: pointer;
+    background: linear-gradient(to top right, rgb(28, 28, 89),blue);    
+    transition: all 0.2s ease;
 }
-nav .contactborder:hover {
+nav .button:active {
+    transform: scale(0.96);
+  }
+  
+  nav .button:before,
+  nav .button:after {
+    position: absolute;
+    content: "";
+    width: 150%;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    z-index: -1000;
+    background-repeat: no-repeat;
+  }
+  
+  nav .button:hover:before {
+    top: -70%;
+    background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+      10% 10%, 18% 18%;
+    background-position: 50% 120%;
+    animation: greentopBubbles 0.6s ease;
+  }
+  
+  @keyframes greentopBubbles {
+    0% {
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+        40% 90%, 55% 90%, 70% 90%;
+    }
+  
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+        50% 50%, 65% 20%, 90% 30%;
+    }
+  
+    100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+        50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+  
+  nav .button:hover::after {
+    bottom: -70%;
+    background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+      radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+    background-position: 50% 0%;
+    animation: greenbottomBubbles 0.6s ease;
+  }
+  
+  @keyframes greenbottomBubbles {
+    0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+        70% -10%, 70% 0%;
+    }
+  
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+        105% 0%;
+    }
+  
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+        110% 10%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+/* nav .contactborder:hover {
     animation: contact 3s ease infinite;   
 }
 @keyframes contact {
@@ -69,7 +157,7 @@ nav .contactborder:hover {
         border-top: 100%;
         border-left-width: 3px;
     }
-}
+} */
 /* nav .contactborder::before {
     content: '';
     width: 97px;
@@ -129,9 +217,6 @@ nav .middle-menu li:hover::after {
 }
 
 /* header */
-#header2 {
-    height: 100vh;
-}
 #header2 .ex i {
     font-size: 40px;
 }
@@ -205,7 +290,7 @@ nav .middle-menu li:hover::after {
     font-size: 1.3rem;
 }
 
-.icon .btn::before {
+/* .icon .btn::before {
     content: '';
     width: 100%;
     height: 100%;
@@ -235,7 +320,7 @@ nav .middle-menu li:hover::after {
 }
 .icon .btn.linkin:hover::before {
     background-color: #0077B5;
-}
+} */
 
 .card1 {
     width: 170px;
@@ -302,7 +387,7 @@ nav .middle-menu li:hover::after {
 /* About Me */
 #aboutMe .container {
     margin-bottom: 70px;
-    /* border: 2px solid green; */
+    border: 2px solid red;
 }
 #aboutMe h2{
     font-size: 41px;
@@ -334,7 +419,7 @@ nav .middle-menu li:hover::after {
     bottom: 0;
     z-index: -1;   
 }
-#aboutMe .aboutimg figure .sport-image {
+/* #aboutMe .aboutimg figure .sport-image {
     animation: about-me-scale 5s ease infinite;
 }
 @keyframes about-me-scale {
@@ -347,7 +432,7 @@ nav .middle-menu li:hover::after {
     100% {
         transform: scale(1);
     }
-}
+} */
 
 #aboutMe .aboutimg .sport-image {
     width: 100%;

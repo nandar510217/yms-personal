@@ -123,7 +123,7 @@ body {
     }
   }
   
-  .button:hover::after {
+  .load .button:hover::after {
     bottom: -70%;
     background-image: radial-gradient(circle, #3a34df 20%, transparent 20%),
       radial-gradient(circle, #3a34df 20%, transparent 20%),
@@ -180,22 +180,13 @@ body {
     text-decoration: none;
 }
 #get-in-touch .button {
-  padding: 8px 25px;
-  background-color: var(--second-color);
-  color: var(--fourth-color);
-  border-radius: 4px;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-#get-in-touch .button {
     position: relative;
+    padding: 8px 25px;
     padding: 10px 22px;
-    border-radius: 6px;
+    border-radius: 4px;
     border: none;
-    color: #fff;
     cursor: pointer;
+    color: var(--fourth-color);
     background-color: var(--second-color);
     transition: all 0.2s ease;
   }
@@ -251,7 +242,7 @@ body {
     }
   }
   
-  .button:hover::after {
+  #get-in-touch .button:hover::after {
     bottom: -70%;
     background-image: radial-gradient(circle, #3a34df 20%, transparent 20%),
       radial-gradient(circle, #3a34df 20%, transparent 20%),
@@ -282,20 +273,6 @@ body {
       background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
     }
   }
-
-/* ==== Footer ==== */
-#footer a {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: var(--second-color);
-    margin: 0 7px;
-}
-#footer a i{
-    line-height: 35px;
-    font-size: 15px;
-    color: #fff;
-}
 
 
 /* ==== MY SPECIALTIES-button- After ==== */
