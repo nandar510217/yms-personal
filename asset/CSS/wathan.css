@@ -156,6 +156,12 @@ body {
   }
 
 /* ==== Get In Touch ==== */
+#get-in-touch .container, .container-fluid{
+  padding-right: 0;
+}
+#get-in-touch .Content span{
+  font-size: 14px;
+}
 #get-in-touch ul li {
     list-style-type: none;
     margin-bottom: 20px;

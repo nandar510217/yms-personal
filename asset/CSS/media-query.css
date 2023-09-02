@@ -1,72 +1,73 @@
+@media (max-width: 984px) {
+  nav .contactborder {
+    border: 0;
+    margin-left: 5px;
+  }
 
+  /* header */
+   .card1 {
+    left: 90px;
+   }
+   .card2 {
+    right: 8rem;
+   }
+   .icons-group {
+      justify-content: center;
+    }
 
-
- /* NANDAR */
- /* @media (max-width: 960px) {
-    
-    body {
-        background-color: rgb(235, 206, 206);
-    } */
-
-    /* header */
-    /* .order1 {
-        order: 1;
-    }
-    .order2 {
-        order: 2;
-    }
-    .order3 {
-        order: 3;
-    }
-    #header .card1 {
-        top: unset;
-        left: 28px;
-        bottom: -70px;
-    }
-    #header .card2 {
-        top: unset;
-        left: unset;
-        bottom: -70px;
-        right: 26px;
-        width: 149px;
-        height: 55px;
-        flex-direction: row;
-    }
-    #header .icon {
-        position: absolute;
-        right: 0px;
-        bottom: -69px;
-    } */
 
     /* About */
-    /* .mqyear { */
-        /* margin-left: 30px; */
-        /* background-color: black;
-    } */
-    /* #aboutMe .container {
-        padding-top: 30px;
+    #aboutMe .row .center {
+      justify-content: center;
     }
+    #aboutMe .yearEx {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0;
+    }
+    #aboutMe .yearEx .year {
+      /* width: 93%; */
+      margin-right: 20px;
+    }
+    #aboutMe .center {
+      padding: 0 70px;
+    }
+    #aboutMe .aboutletter {
+      padding-left: 0px;
+    }
+    #aboutMe .aboutText {
+      font-size: 13px;
+      padding: 0px;
+    }
+   #aboutMe .textColor {
+      font-weight: bolder;
+      font-size: 2.5rem;
+    }
+  #aboutMe .iconPs {
+      padding-left: 13px;
+   }
 }
-
-@media (max-width: 767px) {
-
-    #header .icon {
-        left: 20px;
+@media (max-width: 765px) {
+    .card1 {
+     left: 10px;
     }
-}
-
-@media (max-width: 375px) {
-    .blueCircle {
-        position: absolute;
-        top: -7px;
-        left: -36px;
+    .card2 {
+     right: 2rem;
     }
-}  */
-
-
-
-
-
-
-
-
+ }
+ @media (max-width: 540px) {
+    .card1 {
+     left: 0px;
+    }
+    .card2 {
+     right: 0rem;
+    }
+    #aboutMe .yearEx {
+      display: block;
+    }
+    #aboutMe .yearEx .year {
+      /* width: 93%; */
+      margin-right: 20px;
+    }
+ }
