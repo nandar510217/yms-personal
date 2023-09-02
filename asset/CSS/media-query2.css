@@ -1,8 +1,20 @@
-@media (max-width: 984px) {
-  nav .contactborder {
+@media (max-width: 991px) {
+  /* nav .contactborder {
     border: 0;
     margin-left: 5px;
+  } */
+  nav .middle-menu li:hover::before {
+    width: 0%;
+    height: 0;
   }
+  nav .middle-menu li:hover::after {
+    width: 0%;
+    height: 0;
+  }
+  /* nav a:hover {
+    color: red;
+    background-color: aqua;
+  } */
 
   /* header */
    .card1 {
